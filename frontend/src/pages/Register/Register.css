@@ -1,0 +1,93 @@
+.register_container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.register_form_title h4 {
+    font-family: 'Poppins';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.4px;
+}
+
+.register_form_title {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.register_img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.register_form_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 32px;
+    padding: 88px;
+    width: 50%;
+}
+
+.register_sign_up {
+    color: #38CB89;
+}
+
+.register_form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 10px;
+}
+
+.register_form h1 {
+    margin-bottom: 1rem;
+}
+
+.register_form input {
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+.register_fields {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.register_form label {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.register_form button {
+    margin-top: 32px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.register_form button:hover {
+    background-color: #333;
+}
+
+.register_form a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 0.25rem;
+}
+
+.register_form a:hover {
+    text-decoration: underline;
+}

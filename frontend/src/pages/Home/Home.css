@@ -1,0 +1,50 @@
+.slider-banner {
+    display: flex;
+    width: 1440px;
+    padding: 0px 160px 40px 160px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.slider-banner-text {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.slider-banner-text h1 {
+    color: #141718;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 76px;
+    letter-spacing: -2px;
+}
+
+.slider-banner-text h1 span {
+    color: #6C7275;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 76px;
+    letter-spacing: -2px;
+}
+
+.slider-banner-text p {
+    color: #6C7275;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.slider-banner-text p span {
+    color: #343839;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}

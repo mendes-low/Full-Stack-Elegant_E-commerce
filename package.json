@@ -1,0 +1,17 @@
+{
+  "name": "3legant-e-commerce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently  \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd backend && npm i && npm run dev",
+    "start:frontend": "cd frontend && npm i && npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

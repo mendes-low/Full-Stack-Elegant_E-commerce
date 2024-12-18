@@ -1,0 +1,105 @@
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    padding: 80px 160px;
+    width: 100%;
+}
+
+.user-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.user-header h3 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 58px;
+    letter-spacing: -1px;
+}
+
+.user-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 16px;
+    gap: 40px;
+    width: 230px;
+    border-radius: 8px;
+    background-color: #F3F5F7;
+}
+
+.user-label-default {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    padding: 3px;
+}
+
+.user-label-default p {
+    color: #6C7275;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    list-style: none;
+    cursor: pointer;
+    width: 150px;
+}
+
+.user-label-active {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    padding: 3px;
+    border-bottom: 2px solid #141718;
+}
+
+.user-label-active p {
+    color: #141718;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    list-style: none;
+    cursor: pointer;
+    width: 150px;
+}
+
+.user-labels ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+    width: 100%;
+}
+
+.user-label-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-label-avatar p {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.user-content {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 72px;
+    width: 100%;
+}

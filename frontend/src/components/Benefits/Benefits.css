@@ -1,0 +1,43 @@
+.benefits {
+    display: flex;
+    width: 1440px;
+    padding: 48px 160px;
+    align-items: flex-start;
+    gap: 24px;
+    background-color: #ffffff;
+}
+
+.benefits-card {
+    display: flex;
+    padding: 48px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1 0 0;
+    background: #F3F5F7;
+}
+
+.benefits-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.benefits-card-text h3 {
+    color: #141718;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.benefits-card-text p {
+    color: #6C7275;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}

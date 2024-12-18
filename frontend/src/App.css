@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter/Inter-Medium.ttf');
+}

@@ -1,0 +1,416 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 16px 160px 40px 160px;
+    margin-top: 60px;
+}
+
+.card-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.card-details-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-details-header span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.card-details-header span img {
+    width: 16px;
+    height: 16px;
+}
+
+.card-details-header-default {
+    color: #605F5F;
+}
+
+.card-details-header-active {
+    color: #121212;
+}
+
+
+.card-details-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 63px;
+}
+
+.card-details-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+    width: 55%;
+    height: 100%;
+}
+
+.card-details-images img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    box-shadow: 0px 0px 5px 0px #ebebeb;
+}
+
+.card-details-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 45%;
+    height: 100%;
+}
+
+.card-details-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-details-rating p {
+    color: #141718;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.card-details-discription-title {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E8ECEF;
+}
+
+.card-details-discription-title h6 {
+    color: #141718;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 44px;
+    letter-spacing: -0.4px;
+}
+
+.card-details-prices {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-details-discount-price {
+    color: #121212;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: -0.6px;
+}
+
+.card-details-original-price {
+    color: #6C7275;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    text-decoration: line-through;
+}
+
+.card-details-color-title {
+    color: #6C7275;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.card-details-color-name {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.card-details-description-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px 0;
+    border-bottom: 1px solid #E8ECEF;
+}
+
+.card-details-description-button-like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #141718;
+    background: transparent;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.card-details-description-button-like p {
+    color: #141718;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+}
+
+.card-details-description-button-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background: #141718;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.card-details-description-button-cart-quantity {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.card-details-description-button-cart-quantity-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 25%;
+    padding: 14px 16px;
+    border-radius: 8px;
+    background: #F5F5F5;
+    cursor: pointer;
+}
+
+.card-details-description-button-cart-quantity-content button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.card-details-description-button-cart-quantity-content p {
+    color: #121212;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.card-details-description-button-cart-quantity-remove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 75%;
+    padding: 10px;
+    border-radius: 8px;
+    background: #141718;
+    cursor: pointer
+}
+
+.card-details-description-button-cart-quantity-remove button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.card-details-description-button-cart p,
+.card-details-description-button-cart-quantity-remove p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+}
+
+.card-details-description-category {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.card-details-description-category-title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+}
+
+.card-details-description-category-title p {
+    color: #6C7275;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.card-details-description-category-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+}
+
+.card-details-description-category-content p {
+    color: #141718;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.card-details-additional-info p,
+.card-details-additional-info-packaging p {
+    color: #141718;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 10px 5px;
+}
+
+
+
+.card-details-reviews-customer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+}
+
+.card-details-reviews-customer h3 {
+    color: #23262F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: -0.6px;
+}
+
+
+.card-details-reviews-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-details-reviews-rating p {
+    color: #141718;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.card-details-reviews-new {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 8px;
+}
+
+.card-details-reviews-new input {
+    border: 2px solid #E8ECEF;
+    outline: none;
+    padding: 10px;
+    border-radius: 16px;
+    width: 70%;
+}
+
+.card-details-reviews-new button {
+    display: flex;
+    padding: 6px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 20%;
+    border-radius: 80px;
+    background: #141718;
+    cursor: pointer
+}
+
+.card-details-reviews-new button p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.card-details-reviews-item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+    width: 100%;
+}
+
+.card-details-reviews-item {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    width: 100%;
+    border-bottom: 1px solid #797979;
+    padding-bottom: 10px;
+}
+
+.card-details-reviews-items {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+    padding-top: 40px;
+}
+
+.card-details-reviews-item-content h4 {
+    color: #141718;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+}

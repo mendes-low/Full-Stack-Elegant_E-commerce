@@ -1,0 +1,318 @@
+CREATE TABLE furnitures (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    price INT NOT NULL,
+    discount_price INT,
+    rating INT DEFAULT 0,
+    isNew BOOLEAN DEFAULT TRUE,
+    category VARCHAR(100),
+    details TEXT,
+    packaging JSONB,
+    images JSONB,
+    color JSONB,
+    sku UUID DEFAULT uuid_generate_v4() UNIQUE,
+    added_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+INSERT INTO furnitures (name, price, category, details, packaging, images, color) VALUES 
+(
+  'Marconi 81.5" Tufted Saddle Leather Sofa By Gianfranco Frattini', 
+  3999, 
+  'Living room', 
+  'This sleek, low sofa was originally created by iconic Italian designer Gianfranco Frattini for the fashionable Restaurant St. Andrews in the heart of old Milan. Now, a modern classic returns with the same spirit of the original design, reimagined in full-grain saddle leather. Semi-aniline cowhide is gently polished for a smooth hand that showcases its natural markings. Period-authentic details include hand-pulled button tufts on the interior sides and cushions, along with the inset American black walnut legs that are characteristic of the designer''s signature style. CB2 exclusive.', 
+  '{
+    "width": "81.5",
+    "depth": "33",
+    "height": "24"
+  }'::jsonb, 
+  '["/card/marconi/marconi1.png"]'::jsonb, 
+  '["black", "brown", "red", "white"]'::jsonb
+);
+
+
+INSERT INTO furnitures (name, price, discount_price, category, details, packaging, images, color) VALUES 
+(
+  'Naomi Piece Upholstered Sectional', 
+  1030,
+  930,
+  'Living room', 
+  'Introducing our versatile and chic modular sofa sectional, designed to bring unparalleled comfort and style to your living space. This sectional is a testament to modern elegance and thoughtful design, providing a perfect balance of form and function. Crafted with care, it is upholstered in luxurious chenille fabric, offering a soft and inviting texture. Available in two sophisticated colours, Beige and Black, this sectional effortlessly blends into any interior decor, adding a touch of refinement to your home. The sectional set comprises carefully curated components, including 1 left armchair and 1 right armchair for cosy seating on either side, 3 armless chairs that offer spacious and flexible seating arrangements, 1 corner chair that seamlessly connects the pieces, 1 ottoman for added comfort and versatility, and a practical cupholder console that not only adds a touch of modernity but also provides a convenient spot for your beverages and snacks. One of the standout features of this sectional is its removable back cushions, allowing you to customize your seating experience according to your preference and ensuring easy maintenance. Whether you prefer a plush, sink-in feel or a firmer support, this sectional can be tailored to meet your comfort needs. In today''s digitally connected world, staying charged is essential. That''s why our sectional is equipped with a built-in USB port discreetly integrated into the cupholder console. Now, you can charge your devices conveniently while relaxing on the sofa, keeping you connected without any hassle. This modular sofa sectional is not just a piece of furniture; it''s a statement of style and functionality. Its elegant design, coupled with the convenience of removable cushions and a built-in USB port, makes it a perfect choice for modern living spaces. Upgrade your home with this exquisite sectional and create a cosy, inviting atmosphere for you and your guests to enjoy.', 
+  '{
+    "width": "125.25",
+    "depth": "110.25",
+    "height": "35"
+  }'::jsonb, 
+  '["/naomi/naomi1.png", "/naomi/naomi2.webp"]'::jsonb, 
+  '["black chenille", "green", "white"]'::jsonb
+);   
+
+
+
+
+INSERT INTO furnitures (name, price, discount_price, category, details, packaging, images, color) VALUES 
+(
+  'Allivia Accent Cabinet', 
+  150,
+  107,
+  'Living room', 
+  'This accent cabinet offers a stylish solution to showcase and protect your cherished items. With its two transparent acrylic doors, you can easily display your favorite pieces while keeping them safe. We love that the adjustable shelves inside ensure you can customize the height to suit your collection. Crafted from engineered wood, this cabinet features intricate cutout woodwork that adds an elegant touch to your space. Its black hardware and rectangle shape complement various decor styles.', 
+  '{
+    "width": "32.4",
+    "depth": "15.8",
+    "height": "29.3"
+  }'::jsonb, 
+  '["/allivia/allivia1.png", "/allivia/allivia2.webp", "/allivia/allivia3.webp"]'::jsonb, 
+  '["black", "dark dusty oak", "ivory"]'::jsonb
+);
+
+
+
+
+
+INSERT INTO furnitures (name, price, category, details, packaging, images, color) VALUES 
+(
+  'Sylvester Indoor/Outdoor Dining Chair (Set of 4)', 
+  299,
+  'Kitchen', 
+  'This side chair adds fresh color to a silhouette inspired by iconic mid-century seating. The tapered legs hold a contoured bucket seat with a slightly flexible back. Easy to clean and water-resistant, it''s ideal for messy or outdoor dining spaces – just store it out of direct sunlight. Set of four.', 
+  '{
+    "width": "18.5",
+    "depth": "19.7",
+    "height": "34.65"
+  }'::jsonb, 
+  '["/sylvester/sylvester1.png", "/sylvester/sylvester2.webp", "/sylvester/sylvester3.webp", "/sylvester/sylvester4.webp", "/sylvester/sylvester5.webp"]'::jsonb, 
+  '["black", "ocean teal", "blush pink", "feather grey"]'::jsonb
+);
+
+
+
+
+
+
+
+INSERT INTO furnitures (name, price, category, details, packaging, images, color) VALUES 
+(
+  'Sylvester Indoor/Outdoor Dining Chair (Set of 4)', 
+  1499,
+  'Outdoor', 
+  'Spacious outdoor lounge chair by Barcelona studio Mermelada Estudio is well-suited for entertaining. Weather-resistant faux rattan weave covers a lightweight yet strong aluminum frame, all topped by taupe grey Sunbrella® performance fabric cushions that retain their good looks season after season, soiree after soiree. CB2 exclusive.', 
+  '{
+    "width": "40",
+    "depth": "27.5",
+    "height": "35.4"
+  }'::jsonb, 
+  '["/maylin/maylin1.png", "/maylin/maylin2.jpeg", "/maylin/maylin3.jpeg", "/maylin/maylin4.jpeg"]'::jsonb, 
+  '["black", "beige"]'::jsonb
+);
+
+
+
+INSERT INTO furnitures (name, price, discount_price, category, details, packaging, images, colors) values
+(
+  'Laksha 1 Piece Bedroom Set',
+  409,
+  284,
+  'Bedroom',
+  'Elevate your bedroom with our luxurious wingback bed. Its headboard boasts captivating diamond-shaped button tufting, adding elegance and sophistication to your space. Crafted with comfort and timeless appeal in mind, this bed features a wingback design that exudes classic charm. Upholstered in high-quality 100% polyester velvet fabric, it offers both style and durability. Stay organized with four convenient slide-out metal drawers on the side, perfect for storing essentials. Crafted from solid rubberwood, MDF, and LVL for longevity, this bed ensures lasting quality. Assembly is a breeze with clear, easy-to-follow instructions included. Available in Black, Navy Blue, and Light Grey, this platform bed eliminates the need for a box spring, simplifying your bedding setup. Ships in one box for your convenience.',
+  '{
+    "width": "64.03",
+    "depth": "2.56",
+    "height": "84.71"
+  }'::jsonb,
+  '["/laksha/laksha1.png", "/laksha/laksha2.webp", "/laksha/laksha3.webp", "/laksha/laksha4.webp"]',
+  '[
+    {"hex": "#000000", "name": "Black"}, 
+    {"hex": "#0000ff", "name": "Blue"}, 
+    {"hex": "#a9a9a9", "name": "Dark Grey"}
+  ]'::jsonb
+);
+
+
+
+
+
+
+number 2
+INSERT INTO furnitures (name, price, category, details, packaging, images, colors) values
+(
+  'Aster 96" Oval Black Marble and Aluminum Dining Table',
+  3899,
+  'Dining',
+  'Solid fantasy marble makes a statement in this Brett Beldock design. S-shaped cast aluminum base anchors the oval slab of marble on top. Antiqued finish on the base adds a unique "found" look to the piece. CB2 exclusive.',
+  '{
+    "width": "96",
+    "depth": "46",
+    "height": "30"
+  }'::jsonb,
+  '["/aster/aster1.png", "/aster/aster2.jpeg", "/aster/aster3.jpeg", "/aster/aster4.jpeg"]',
+  '[
+    {"hex": "#000000", "name": "Black"}, 
+    {"hex": "#edede5", "name": "Snowy Mountain White"}, 
+    {"hex": "#808080", "name": "Grey"}
+  ]'::jsonb
+);
+
+
+
+
+
+
+
+
+
+INSERT INTO furnitures (is_new,name, price, discount_price, category, details, packaging, images, colors) values
+(
+  false,
+  'Finch Provence Mercie Farmhouse Dining Table',
+  160,
+  296,
+  'Dining',
+  'Bring traditional cottage style and farmhouse charm to your dining space with this handsome wood dining table. The clean-lined rectangular silhouette tabletop features brown wood grain details, while the contrasting colored apron and turned wood legs complete the design. Sturdy wood construction creates comfortable seating for four to six guests.',
+  '{
+    "width": "36",
+    "depth": "15.75",
+    "height": "29.13"
+  }'::jsonb,
+  '["/algona/algona1.png", "/algona/algona2.webp", "/algona/algona3.webp", "/algona/algona4.webp"]',
+  '[
+    {"hex": "#ffffff", "name": "White"}, 
+    {"hex": "#000000", "name": "Black"},
+    {"hex": "#a52a2a", "name": "Brown"}
+  ]'::jsonb
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INSERT INTO furnitures (is_new, name, price, discount_price, category, details, packaging, images, colors) values
+(
+  false,
+  'Ameire Upholstered Wingback Bed',
+  299,
+  170,
+  'Bedroom',
+  'Enhance your bedroom with this tufted upholstered panel bed to bring your bedroom an elegant and contemporary style.',
+  '{
+    "width": "65.7",
+    "depth": "87.2",
+    "height": "48.4"
+  }'::jsonb,
+  '["/ameire/ameire1.png", "/ameire/ameire2.webp", "/ameire/ameire3.webp", "/ameire/ameire4.webp"]',
+  '[
+     {"hex": "#000000", "name": "Black"},
+     {"hex": "#f5f5dc", "name": "Beige"},
+     {"hex": "#808080", "name": "Gray"}
+  ]'::jsonb
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE reviews (
+    id SERIAL PRIMARY KEY,
+    user_id int REFERENCES users(id),
+    furniture_id int REFERENCES furnitures(id),
+    comment TEXT NOT NULL,
+    rating int NOT NULL CHECK (rating >= 1 AND rating <= 5),
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+
+
+
+
+
+
+
+
+UPDATE furnitures 
+SET colors = '[
+  {"hex": "#000000", "name": "Black"}, 
+  {"hex": "#55342b", "name": "Dark Dusty Oak"}, 
+  {"hex": "#e5cca1", "name": "Ivoty/Knotty Oak"}, 
+  {"hex": "#252321", "name": "Balck/Knotty Oak"}, 
+  {"hex": "#969c9a", "name": "Dusty Grey Oak"}, 
+  {"hex": "#edd498", "name": "Ivory"}
+]'::jsonb 
+WHERE id = 5;
+
+
+
+UPDATE furnitures 
+SET colors = '[
+    {"hex": "#000000", "name": "Black"}, 
+    {"hex": "#73706f", "name": "Brushed Nickel"}, 
+    {"hex": "#ffd700", "name": "Gold"}
+]'::jsonb 
+WHERE id = 20;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE OR REPLACE FUNCTION update_is_new()
+RETURNS TRIGGER AS $$
+BEGIN
+    IF NEW.added_date <= NOW() - INTERVAL '5 days' THEN
+        NEW.is_new := true;
+    ELSE
+        NEW.is_new := false;
+    END IF;
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+
+
+CREATE TRIGGER update_is_new_trigger
+BEFORE INSERT OR UPDATE ON furnitures
+FOR EACH ROW
+EXECUTE FUNCTION update_is_new();
+
+
+INSERT INTO furnitures (added_date) VALUES (NOW() - INTERVAL '5 days');
+
+INSERT INTO furnitures (added_date) VALUES (NOW() - INTERVAL '10 days');
+
+
+

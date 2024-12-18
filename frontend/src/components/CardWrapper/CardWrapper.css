@@ -1,0 +1,79 @@
+.card-wrapper {
+    display: flex;
+    padding: 48px 0px 0px 160px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    width: 100%;
+}
+
+.cards-scrollbar {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.cards-scrollbar .simplebar-scrollbar::before {
+    background-color: #343839;
+}
+
+.cards-scrollbar .simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+    height: 8px;
+}
+
+.cards-scrollbar .simplebar-track .simplebar-scrollbar.simplebar-visible::before {
+    opacity: 1;
+    background-color: #343839;
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar:not(.simplebar-visible)::before {
+    background-color: grey;
+}
+
+.cards-container {
+    display: flex;
+    gap: 24px;
+    white-space: nowrap;
+    padding-bottom: 58px;
+}
+
+.card-wrapper-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 1120px;
+}
+
+.card-wrapper-title p {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.4px;
+}
+
+.card-wrapper-title button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid #141718;
+    background-color: transparent;
+}
+
+.card-wrapper-title-link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #141718;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+}

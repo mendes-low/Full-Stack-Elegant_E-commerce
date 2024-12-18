@@ -1,0 +1,38 @@
+.categories {
+    display: flex;
+    padding: 80px 160px;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.categories h2 {
+    color: #23262F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.4px;
+}
+
+.categories-rows {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    row-gap: 48px;
+}
+
+.categories-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    background-color: #F3F5F7;
+}
+
+.categories-row img {
+    width: 357px;
+    height: 309px;
+    object-fit: contain;
+}
